@@ -3,10 +3,6 @@ module(..., package.seeall)
 -- local Err = require 'lib.error'
 local Form = require 'bamboo.form'
 
-bamboo.registerFilters
-{
-	{'login', checkLogined}
-}
 
 
 -- 检查是否登录
@@ -156,3 +152,8 @@ end
 -- end
 
 -- post filters
+
+bamboo.registerFilters
+{
+	{'login', checkLogined}
+}
